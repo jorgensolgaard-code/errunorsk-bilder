@@ -1,0 +1,452 @@
+[
+ {
+  "id": "001-kabbespya",
+  "date": "2026-10-23",
+  "ord": "kåbbespya",
+  "landsdel": "Nord-Norge",
+  "valg": [
+   "Krabbe",
+   "Manet",
+   "Bølgeskvett"
+  ],
+  "riktig": 1,
+  "betyr": "manet",
+  "eksempel": "«Pass dæ, det e ei kåbbespya i fjæra!»",
+  "dialekt": "nordnorsk",
+  "tag": "#nordnorsk",
+  "kilde": "https://snl.no/nordnorsk",
+  "status": "planlagt"
+ },
+ {
+  "id": "002-tjommi",
+  "date": "2026-10-25",
+  "ord": "tjommi",
+  "landsdel": "Bergen",
+  "valg": [
+   "Tomat",
+   "Kompis",
+   "Tømmer"
+  ],
+  "riktig": 1,
+  "betyr": "kompis",
+  "eksempel": "«Han e en go' tjommi.»",
+  "dialekt": "bergensk",
+  "tag": "#bergensk",
+  "kilde": "https://www.bergen.kommune.no/omkommunen/fakta-om-bergen/kuriosa/ka-betyr-det-for-nokke",
+  "status": "planlagt"
+ },
+ {
+  "id": "003-dokker",
+  "date": "2026-10-27",
+  "ord": "dokker",
+  "landsdel": "Trøndelag",
+  "valg": [
+   "Dere",
+   "Dukker",
+   "Doktorer"
+  ],
+  "riktig": 0,
+  "betyr": "dere",
+  "eksempel": "«Ska dokker hjæm no?»",
+  "dialekt": "trøndersk",
+  "tag": "#trøndersk",
+  "kilde": "https://en.wikipedia.org/wiki/Tr%C3%B8ndersk",
+  "status": "planlagt"
+ },
+ {
+  "id": "004-aevver",
+  "date": "2026-10-29",
+  "ord": "ævver",
+  "landsdel": "Oslo",
+  "valg": [
+   "Ører",
+   "Albuer",
+   "Øyne"
+  ],
+  "riktig": 2,
+  "betyr": "øyne",
+  "eksempel": "«Hu hadde så blå ævver.»",
+  "dialekt": "gammel oslodialekt",
+  "tag": "#oslodialekt",
+  "kilde": "https://lokalhistoriewiki.no/wiki/Oslodialekt",
+  "status": "planlagt"
+ },
+ {
+  "id": "005-kage",
+  "date": "2026-10-31",
+  "ord": "kage",
+  "landsdel": "Sørlandet",
+  "valg": [
+   "Bur",
+   "Kake",
+   "Kåpe"
+  ],
+  "riktig": 1,
+  "betyr": "kake",
+  "eksempel": "«Vil du ha et stykke kage?»",
+  "dialekt": "sørlandsk",
+  "tag": "#sørlandsk",
+  "kilde": "https://snl.no/sørlandsk",
+  "status": "planlagt"
+ },
+ {
+  "id": "006-joger",
+  "date": "2026-11-01",
+  "ord": "jøger",
+  "landsdel": "Nord-Norge",
+  "valg": [
+   "Stolt",
+   "Sulten",
+   "Sliten"
+  ],
+  "riktig": 0,
+  "betyr": "stolt, kry",
+  "eksempel": "«Han va jøger over den nye båten.»",
+  "dialekt": "nordnorsk",
+  "tag": "#nordnorsk",
+  "kilde": "https://snl.no/nordnorsk",
+  "status": "planlagt"
+ },
+ {
+  "id": "007-boss",
+  "date": "2026-11-02",
+  "ord": "boss",
+  "landsdel": "Bergen",
+  "valg": [
+   "Sjef",
+   "Buss",
+   "Søppel"
+  ],
+  "riktig": 2,
+  "betyr": "søppel",
+  "eksempel": "«Kan du ta ut bosset?»",
+  "dialekt": "bergensk",
+  "tag": "#bergensk",
+  "kilde": "https://www.bergen.kommune.no/omkommunen/fakta-om-bergen/kuriosa/ka-betyr-det-for-nokke",
+  "status": "planlagt"
+ },
+ {
+  "id": "008-vukku",
+  "date": "2026-11-04",
+  "ord": "vukku",
+  "landsdel": "Trøndelag",
+  "valg": [
+   "Vugge",
+   "Uke",
+   "Vott"
+  ],
+  "riktig": 1,
+  "betyr": "uke",
+  "eksempel": "«Vi sees i neste vukku.»",
+  "dialekt": "trøndersk",
+  "tag": "#trøndersk",
+  "kilde": "https://snl.no/Trøndersk",
+  "status": "planlagt"
+ },
+ {
+  "id": "009-assen",
+  "date": "2026-11-05",
+  "ord": "åssen",
+  "landsdel": "Oslo",
+  "valg": [
+   "Hvordan",
+   "Hvor mye",
+   "Åker"
+  ],
+  "riktig": 0,
+  "betyr": "hvordan",
+  "eksempel": "«Åssen går'e?»",
+  "dialekt": "oslodialekt",
+  "tag": "#oslodialekt",
+  "kilde": "https://lokalhistoriewiki.no/wiki/Oslodialekt",
+  "status": "planlagt"
+ },
+ {
+  "id": "010-vem",
+  "date": "2026-11-07",
+  "ord": "vem",
+  "landsdel": "Sørlandet",
+  "valg": [
+   "Vemod",
+   "Vann",
+   "Hvem"
+  ],
+  "riktig": 2,
+  "betyr": "hvem",
+  "eksempel": "«Vem e de?»",
+  "dialekt": "sørlandsk",
+  "tag": "#sørlandsk",
+  "kilde": "https://snl.no/sørlandsk",
+  "status": "planlagt"
+ },
+ {
+  "id": "011-ist",
+  "date": "2026-11-08",
+  "ord": "ist",
+  "landsdel": "Nord-Norge",
+  "valg": [
+   "Fryse",
+   "Gidde",
+   "Haste"
+  ],
+  "riktig": 1,
+  "betyr": "gidde",
+  "eksempel": "«Æ ist ikkje å gå ut i dag.»",
+  "dialekt": "nordnorsk",
+  "tag": "#nordnorsk",
+  "kilde": "https://snl.no/nordnorsk",
+  "status": "planlagt"
+ },
+ {
+  "id": "012-knas",
+  "date": "2026-11-10",
+  "ord": "knas",
+  "landsdel": "Bergen",
+  "valg": [
+   "Fint, hyggelig",
+   "Sur",
+   "Sliten"
+  ],
+  "riktig": 0,
+  "betyr": "fint, hyggelig",
+  "eksempel": "«Det va knas å se deg igjen!»",
+  "dialekt": "bergensk",
+  "tag": "#bergensk",
+  "kilde": "https://www.bergen.kommune.no/omkommunen/fakta-om-bergen/kuriosa/ka-betyr-det-for-nokke",
+  "status": "planlagt"
+ },
+ {
+  "id": "013-navva",
+  "date": "2026-11-11",
+  "ord": "nåvvå",
+  "landsdel": "Trøndelag",
+  "valg": [
+   "Nese",
+   "Navle",
+   "Neve"
+  ],
+  "riktig": 2,
+  "betyr": "neve",
+  "eksempel": "«Han slo nåvvån i bordet.»",
+  "dialekt": "trøndersk",
+  "tag": "#trøndersk",
+  "kilde": "https://snl.no/Trøndersk",
+  "status": "planlagt"
+ },
+ {
+  "id": "014-vars",
+  "date": "2026-11-13",
+  "ord": "vårs",
+  "landsdel": "Oslo",
+  "valg": [
+   "Våren",
+   "Oss",
+   "Varm"
+  ],
+  "riktig": 1,
+  "betyr": "oss",
+  "eksempel": "«Bli med vårs på kino!»",
+  "dialekt": "oslodialekt",
+  "tag": "#oslodialekt",
+  "kilde": "https://lokalhistoriewiki.no/wiki/Oslodialekt",
+  "status": "planlagt"
+ },
+ {
+  "id": "015-hoses",
+  "date": "2026-11-14",
+  "ord": "hoses",
+  "landsdel": "Sørlandet",
+  "valg": [
+   "Hennes",
+   "Strømper",
+   "Hester"
+  ],
+  "riktig": 0,
+  "betyr": "hennes",
+  "eksempel": "«E de kje hoses?»",
+  "dialekt": "sørlandsk",
+  "tag": "#sørlandsk",
+  "kilde": "https://snl.no/sørlandsk",
+  "status": "planlagt"
+ },
+ {
+  "id": "016-dakk",
+  "date": "2026-11-16",
+  "ord": "dåkk",
+  "landsdel": "Nord-Norge",
+  "valg": [
+   "Dukke",
+   "Mørk",
+   "Dere"
+  ],
+  "riktig": 2,
+  "betyr": "dere",
+  "eksempel": "«Ska dåkk vær med på tur?»",
+  "dialekt": "nordnorsk",
+  "tag": "#nordnorsk",
+  "kilde": "https://snl.no/nordnorsk",
+  "status": "planlagt"
+ },
+ {
+  "id": "017-brate",
+  "date": "2026-11-17",
+  "ord": "bråte",
+  "landsdel": "Bergen",
+  "valg": [
+   "Båt",
+   "Masse, mye",
+   "Bråk"
+  ],
+  "riktig": 1,
+  "betyr": "masse, mye",
+  "eksempel": "«Det kom en bråte folk.»",
+  "dialekt": "bergensk",
+  "tag": "#bergensk",
+  "kilde": "https://www.bergen.kommune.no/omkommunen/fakta-om-bergen/kuriosa/ka-betyr-det-for-nokke",
+  "status": "planlagt"
+ },
+ {
+  "id": "018-kalles",
+  "date": "2026-11-19",
+  "ord": "kålles",
+  "landsdel": "Trøndelag",
+  "valg": [
+   "Hvordan",
+   "Kollega",
+   "Kulde"
+  ],
+  "riktig": 0,
+  "betyr": "hvordan",
+  "eksempel": "«Kålles går det med dæ?»",
+  "dialekt": "trøndersk",
+  "tag": "#trøndersk",
+  "kilde": "https://en.wikipedia.org/wiki/Tr%C3%B8ndersk",
+  "status": "planlagt"
+ },
+ {
+  "id": "019-affer",
+  "date": "2026-11-20",
+  "ord": "åffer",
+  "landsdel": "Oslo",
+  "valg": [
+   "Offer",
+   "Åpner",
+   "Hvorfor"
+  ],
+  "riktig": 2,
+  "betyr": "hvorfor",
+  "eksempel": "«Åffer det, a?»",
+  "dialekt": "oslodialekt",
+  "tag": "#oslodialekt",
+  "kilde": "https://lokalhistoriewiki.no/wiki/Oslodialekt",
+  "status": "planlagt"
+ },
+ {
+  "id": "020-kje",
+  "date": "2026-11-22",
+  "ord": "kje",
+  "landsdel": "Sørlandet",
+  "valg": [
+   "Kjede",
+   "Ikke",
+   "Kjære"
+  ],
+  "riktig": 1,
+  "betyr": "ikke",
+  "eksempel": "«Eg kan kje kåmme i dag.»",
+  "dialekt": "sørlandsk",
+  "tag": "#sørlandsk",
+  "kilde": "https://snl.no/sørlandsk",
+  "status": "planlagt"
+ },
+ {
+  "id": "021-kaem",
+  "date": "2026-11-23",
+  "ord": "kæm",
+  "landsdel": "Nord-Norge",
+  "valg": [
+   "Hvem",
+   "Kanskje",
+   "Kald"
+  ],
+  "riktig": 0,
+  "betyr": "hvem",
+  "eksempel": "«Kæm e det som ringe?»",
+  "dialekt": "nordnorsk",
+  "tag": "#nordnorsk",
+  "kilde": "https://snl.no/nordnorsk",
+  "status": "planlagt"
+ },
+ {
+  "id": "022-daffe",
+  "date": "2026-11-25",
+  "ord": "daffe",
+  "landsdel": "Bergen",
+  "valg": [
+   "Danse",
+   "Drikke",
+   "Gå sakte"
+  ],
+  "riktig": 2,
+  "betyr": "gå sakte, rusle",
+  "eksempel": "«Vi daffæt rundt på Bryggen.»",
+  "dialekt": "bergensk",
+  "tag": "#bergensk",
+  "kilde": "https://www.bergen.kommune.no/omkommunen/fakta-om-bergen/kuriosa/ka-betyr-det-for-nokke",
+  "status": "planlagt"
+ },
+ {
+  "id": "023-itj",
+  "date": "2026-11-26",
+  "ord": "itj",
+  "landsdel": "Trøndelag",
+  "valg": [
+   "Inne",
+   "Ikke",
+   "Igjen"
+  ],
+  "riktig": 1,
+  "betyr": "ikke",
+  "eksempel": "«Æ veit itj.»",
+  "dialekt": "trøndersk",
+  "tag": "#trøndersk",
+  "kilde": "https://kiwix.lema.org/wiktionary_en_all_maxi_2024-01/A/itj",
+  "status": "planlagt"
+ },
+ {
+  "id": "024-demses",
+  "date": "2026-11-28",
+  "ord": "demses",
+  "landsdel": "Oslo",
+  "valg": [
+   "Deres",
+   "Dømme",
+   "Demme"
+  ],
+  "riktig": 0,
+  "betyr": "deres",
+  "eksempel": "«Det er demses hus.»",
+  "dialekt": "oslodialekt",
+  "tag": "#oslodialekt",
+  "kilde": "https://lokalhistoriewiki.no/wiki/Oslodialekt",
+  "status": "planlagt"
+ },
+ {
+  "id": "025-tefriss",
+  "date": "2026-11-29",
+  "ord": "tefriss",
+  "landsdel": "Bergen",
+  "valg": [
+   "Forkjølet",
+   "Frossen",
+   "Fornøyd"
+  ],
+  "riktig": 2,
+  "betyr": "fornøyd",
+  "eksempel": "«Eg e tefriss med det.»",
+  "dialekt": "bergensk",
+  "tag": "#bergensk",
+  "kilde": "https://www.bergen.kommune.no/omkommunen/fakta-om-bergen/kuriosa/ka-betyr-det-for-nokke",
+  "status": "planlagt"
+ }
+]
