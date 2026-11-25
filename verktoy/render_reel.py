@@ -47,6 +47,7 @@ font-size:96px;font-weight:800}
 <div class="foot"><span>@errunorsk</span><span>Svar i kommentarfeltet</span></div>
 </div>
 <script>
+(()=>{
 const clamp=(x)=>Math.max(0,Math.min(1,x));
 const ease=(x)=>1-Math.pow(1-clamp(x),3);
 const back=(x)=>{x=clamp(x);const c=1.7;return 1+(c+1)*Math.pow(x-1,3)+c*Math.pow(x-1,2);};
@@ -73,6 +74,7 @@ window.setT=(t)=>{
  else cnt.style.opacity=1-ease((t-6.0)/0.2);
  document.querySelector('.ex').style.opacity=ease((t-6.4)/0.4);
 };
+})();
 </script></body></html>"""
 
 
@@ -92,8 +94,10 @@ def main(src, out):
     out = pathlib.Path(out); out.mkdir(parents=True, exist_ok=True)
     with sync_playwright() as p:
         b = p.chromium.launch()
-        pg = b.new_page(viewport={"width": 1080, "height": 1920})
         for w in words:
+            # Fresh page per word: reusing one page keeps the old global script state
+            # (const redeclaration fails), which gave wrong answers and no headline fit.
+            pg = b.new_page(viewport={"width": 1080, "height": 1920})
             pg.set_content(build_html(w))
             pg.evaluate("document.fonts.ready")
             with tempfile.TemporaryDirectory() as tmp:
@@ -110,6 +114,7 @@ def main(src, out):
                     "-shortest", "-c:v", "libx264", "-pix_fmt", "yuv420p", "-profile:v", "high",
                     "-crf", "20", "-r", str(FPS), "-c:a", "aac", "-b:a", "128k", "-movflags", "+faststart",
                     str(out / f'{w["id"]}.mp4')], check=True)
+            pg.close()
             print("rendered", w["id"])
         b.close()
 
