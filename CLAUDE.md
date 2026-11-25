@@ -6,9 +6,10 @@ egenkontroll før hvert innlegg planlegges.
 
 ## Faste verdier
 - Metricool-merkevare (blogId): `7570130`, kun Instagram (`errunorsk`). Bruk tidssone `Europe/Madrid` i Metricool (samme tid som Oslo).
-- Bilder ligger i `bilder/` og hentes av Metricool via
-  `https://raw.githubusercontent.com/jorgensolgaard-code/errunorsk-bilder/main/bilder/<id>.png`
-  (filen må være pushet før innlegget planlegges).
+- **Format: Reels** (fra 26.11.2026). Videoer og forsidebilder ligger i `reels/` og hentes av Metricool via
+  `https://raw.githubusercontent.com/jorgensolgaard-code/errunorsk-bilder/main/reels/<id>.mp4` og `.../reels/<id>-cover.png`
+  (filene må være pushet før innlegget planlegges). `bilder/` inneholder de gamle enkeltbildene og brukes ikke lenger.
+- Svaret skal ALDRI stå i bildeteksten. Svaret avsløres i slutten av videoen, slik at folk gjetter i kommentarfeltet.
 - Alle brukte ord står i `data/ord.json`. Et ord som står der, skal ALDRI brukes igjen.
 
 ## Regler for planleggingen
@@ -28,26 +29,20 @@ egenkontroll før hvert innlegg planlegges.
 4. Lag to feilsvar per ord. Egenkontroll: et feilsvar må IKKE være en gyldig betydning av ordet på bokmål, nynorsk eller i en annen dialekt (eks.: «dokker» kan bety båthavner på bokmål, så det kan ikke være feilsvar). Feilsvarene skal være troverdige, ikke tullete.
 5. Skriv eksempelsetning i dialektens former (bruk kildenes bøyning, f.eks. bergensk fortid -æt, sørlandsk «kåmme»).
 6. Legg ordene til i `data/ord.json` (samme felt som eksisterende: id, date, ord, landsdel, valg, riktig, betyr, eksempel, dialekt, tag, kilde, status). id = løpenummer med tre siffer + ord uten æøå (æ→ae, ø→o, å→a).
-7. Lag bildene: `python3 verktoy/render.py <json med de nye ordene> bilder/`. Krever Playwright + Chromium (finnes i miljøet). Fonten er Inter Display; overskriften krympes automatisk til den passer.
-8. **Se på hvert bilde** (les PNG-filen) før opplasting: ordet skal ikke gå ut over kanten, ingen skrivefeil, riktig landsdel.
-9. Commit og push `bilder/` og `data/ord.json` til `main`.
-10. Planlegg hvert innlegg med Metricool `createScheduledPost`, `draft: false`, `autoPublish: true`, `instagramData.type: "POST"`, `isAiGenerated: false`, alt-tekst `Quiz: Hva betyr <ord>? A …, B …, C …`.
+7. Lag videoene: `python3 verktoy/render_reel.py <json med de nye ordene> reels/`. Lager `<id>.mp4` (1080x1920, 9,5 s: spørsmål → nedtelling 3-2-1 → riktig svar markeres + eksempelsetning) og `<id>-cover.png`. Tar ca. 15 s per ord; kjør maks 4 ord per kommando (eller to kommandoer parallelt) for å unngå tidsavbrudd. Krever Playwright, Chromium og ffmpeg (finnes i miljøet).
+8. **Kontroller hver video** før opplasting: trekk ut et bilde fra slutten (`ffmpeg -ss 9 -i reels/<id>.mp4 -frames:v 1 ut.png`) og les det, og les `<id>-cover.png`. Sjekk at RIKTIG alternativ er markert (sammenlign med `riktig` i ord.json), at ordet ikke går ut over kanten, ingen skrivefeil og riktig landsdel.
+9. Commit og push `reels/` og `data/ord.json` til `main`.
+10. Planlegg hvert innlegg med Metricool `createScheduledPost`: `media: [<mp4-url>]`, `videoThumbnailUrl: <cover-url>`, `draft: false`, `autoPublish: true`, `instagramData: {"type": "REEL", "showReelOnFeed": true, "isAiGenerated": false}`, alt-tekst `Quiz: Hva betyr <ord>? A …, B …, C …`.
 
 ## Bildetekst (mal)
 ```
-Hva betyr «<ord>»? Gjett i kommentarfeltet før du leser videre!
-.
-.
-.
-.
-.
-Svar: <bokstav> – <betydning>
-<eksempelsetning>
-Ordet er <dialekt>. Hva sier dere der du bor?
+Hva betyr «<ord>»? Skriv A, B eller C i kommentarfeltet før svaret dukker opp i videoen!
+
+Hva sier dere der du bor? 👇
 
 #dialekt #dialektord <#landsdelstag> #norsk #errunorsk
 ```
-For Østlandet/byer: «Ordet er fra oslodialekten.» o.l. (ikke «Ordet er oslodialekt»).
+Ikke ta med svar, betydning eller eksempelsetning i bildeteksten.
 
 ## Rapport
 Avslutt med en kort melding på norsk til Jørgen: hvor mange innlegg som ble lagt til, hvilke datoer, og om noe gikk galt.
